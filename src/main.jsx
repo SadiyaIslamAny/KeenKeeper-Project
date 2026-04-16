@@ -7,6 +7,7 @@ import RootLayout from './Layout/RootLayout';
 import Home from './Pages/HomePage/Home';
 import Timeline from './Pages/TimelinePage/Timeline';
 import Stats from './Pages/StatsPage/Stats';
+import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,8 @@ const router = createBrowserRouter([
         path:"/stats",
         Component: Stats,
       }
-    ]
+    ],
+    errorElement: <NotFoundPage></NotFoundPage>
   },
 ]);
 

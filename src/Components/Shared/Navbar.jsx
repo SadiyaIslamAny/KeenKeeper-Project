@@ -17,7 +17,7 @@ const Navbar = () => {
                     <img
                         src={logoImg}
                         alt='HERO.IO'
-                        className='w-[120px] md:w-[130px] lg:w-[141px]'
+                        className='w-[120px] md:w-[130px] lg:w-[200px]'
                     />
                 </div>
 

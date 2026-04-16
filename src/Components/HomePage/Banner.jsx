@@ -3,7 +3,7 @@ import { IoAddOutline } from 'react-icons/io5';
 
 const Banner = () => {
     return (
-        <div className='min-h-[70vh] text-center space-y-6 pt-[50px] bg-[#F8FAFC]'>
+        <div className='min-h-[70vh] text-center space-y-6 pt-[50px] bg-[#F8FAFC] mt-0.5'>
             <h1 className='font-bold text-5xl'>Friends to keep close in your life</h1>
             <p className='text-[#64748B]'>Your personal shelf of meaningful connections. Browse, tend, and nurture the<br />
                 relationships that matter most.</p>
