@@ -7,7 +7,8 @@ import RootLayout from './Layout/RootLayout';
 import Home from './Pages/HomePage/Home';
 import Timeline from './Pages/TimelinePage/Timeline';
 import Stats from './Pages/StatsPage/Stats';
-import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
+import NotFoundPage from './Pages/NotFoundPage/NotFoundPage'
+import FriendDetails from './Pages/FriendDetails/FriendDetails';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         Component: Home,
+      },
+      {
+        path: "/:id",
+        Component: FriendDetails,
       },
       {
         path: "/timeline",
