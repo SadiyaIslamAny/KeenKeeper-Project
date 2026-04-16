@@ -2,11 +2,11 @@
   {
     "id": 1,
     "name": "John Doe",
-    "picture": "https://example.com/photo1.jpg",
+    "picture": "https://randomuser.me/api/portraits/men/1.jpg",
     "email": "john@example.com",
     "days_since_contact": 12,
-    "status": "overdue",
-    "tags": ["college", "close friend"],
+    "status": "Overdue",
+    "tags": ["COLLEGE", "CLOSE FRIEND"],
     "bio": "Met in university. Love hiking together.",
     "goal": 14,
     "next_due_date": "2025-07-20"
@@ -14,11 +14,11 @@
   {
     "id": 2,
     "name": "Sarah Ahmed",
-    "picture": "https://example.com/photo2.jpg",
+    "picture": "https://randomuser.me/api/portraits/women/2.jpg",
     "email": "sarah@example.com",
     "days_since_contact": 5,
-    "status": "on-track",
-    "tags": ["work", "colleague"],
+    "status": "On-Track",
+    "tags": ["WORK", "COLLEGE"],
     "bio": "Work friend from office projects.",
     "goal": 10,
     "next_due_date": "2025-07-25"
@@ -26,11 +26,11 @@
   {
     "id": 3,
     "name": "Michael Smith",
-    "picture": "https://example.com/photo3.jpg",
+    "picture": "https://randomuser.me/api/portraits/men/3.jpg",
     "email": "michael@example.com",
     "days_since_contact": 18,
-    "status": "almost due",
-    "tags": ["gym", "fitness buddy"],
+    "status": "Almost due",
+    "tags": ["WORK", "FITNESS BUDDY"],
     "bio": "Gym partner and motivation buddy.",
     "goal": 20,
     "next_due_date": "2025-07-18"
@@ -38,11 +38,11 @@
   {
     "id": 4,
     "name": "Emily Johnson",
-    "picture": "https://example.com/photo4.jpg",
+    "picture": "https://randomuser.me/api/portraits/women/4.jpg",
     "email": "emily@example.com",
     "days_since_contact": 2,
-    "status": "on-track",
-    "tags": ["school", "best friend"],
+    "status": "On-Track",
+    "tags": ["SCHOOL", "BEST FRIEND"],
     "bio": "School best friend since childhood.",
     "goal": 7,
     "next_due_date": "2025-07-30"
@@ -50,11 +50,11 @@
   {
     "id": 5,
     "name": "David Lee",
-    "picture": "https://example.com/photo5.jpg",
+    "picture": "https://randomuser.me/api/portraits/men/5.jpg",
     "email": "david@example.com",
     "days_since_contact": 22,
-    "status": "overdue",
-    "tags": ["travel", "friend"],
+    "status": "Overdue",
+    "tags": ["TRAVEL", "FRIEND"],
     "bio": "Travel companion for many trips.",
     "goal": 30,
     "next_due_date": "2025-07-10"
@@ -62,11 +62,11 @@
   {
     "id": 6,
     "name": "Ayesha Rahman",
-    "picture": "https://example.com/photo6.jpg",
+    "picture": "https://randomuser.me/api/portraits/women/6.jpg",
     "email": "ayesha@example.com",
     "days_since_contact": 9,
-    "status": "almost due",
-    "tags": ["university", "friend"],
+    "status": "Almost due",
+    "tags": ["UNIVERSITY", "FRIEND"],
     "bio": "University classmate and project partner.",
     "goal": 12,
     "next_due_date": "2025-07-22"
@@ -74,11 +74,11 @@
   {
     "id": 7,
     "name": "Robert Brown",
-    "picture": "https://example.com/photo7.jpg",
+    "picture": "https://randomuser.me/api/portraits/men/7.jpg",
     "email": "robert@example.com",
     "days_since_contact": 1,
-    "status": "on-track",
-    "tags": ["neighbor", "friend"],
+    "status": "On-Track",
+    "tags": ["NEIGHBOR", "FRIEND"],
     "bio": "Neighbor and weekend football buddy.",
     "goal": 5,
     "next_due_date": "2025-07-28"
@@ -86,11 +86,11 @@
   {
     "id": 8,
     "name": "Fatima Noor",
-    "picture": "https://example.com/photo8.jpg",
+    "picture": "https://randomuser.me/api/portraits/women/8.jpg",
     "email": "fatima@example.com",
     "days_since_contact": 15,
-    "status": "almost due",
-    "tags": ["family friend"],
+    "status": "Almost due",
+    "tags": ["FAMILY FRIEND"],
     "bio": "Family friend, known since childhood.",
     "goal": 16,
     "next_due_date": "2025-07-19"
