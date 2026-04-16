@@ -1,10 +1,14 @@
 import React from 'react';
+import Banner from '../../Components/HomePage/Banner';
+import YourFriends from '../../Components/HomePage/YourFriends';
 
 const Home = () => {
     return (
-        <div className='text-6xl text-green-500 text-center'>
-            home 
-        </div>
+        <>
+         <Banner></Banner>
+         <YourFriends></YourFriends>
+        </>
+    
     );
 };
 
