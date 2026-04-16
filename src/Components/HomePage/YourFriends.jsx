@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import { SyncLoader } from 'react-spinners';
 const YourFriends = () => {
     const [friends, setFriends] = useState([]);
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         const fetchData = async () => {
             const res = await fetch('/public/friends.json')
             const data = await res.json()
             setFriends(data);
+            setLoading(false)
         };
         fetchData();
     }, [])
@@ -22,7 +25,8 @@ const YourFriends = () => {
         return "bg-[#244D3F] text-white";
     };
 
-    console.log(friends);
+    // console.log(friends);
+    console.log(loading)
     return (
         <div className="bg-[#F8FAFC] py-10">
             <div className="w-10/12 mx-auto mb-4">
@@ -31,7 +35,11 @@ const YourFriends = () => {
                 </h2>
             </div>
 
-            <div className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {loading? 
+            <div className='flex justify-center items-center'>
+                <SyncLoader color='#244D3F' />
+            </div>
+            : <div className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
                 {friends.map((friend) => (
 
@@ -86,7 +94,7 @@ const YourFriends = () => {
 
                 ))}
 
-            </div>
+            </div>}
 
         </div>
 
