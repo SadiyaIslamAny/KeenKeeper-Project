@@ -4,6 +4,8 @@ import './index.css'
 import { RouterProvider } from 'react-router/dom'
 import { createBrowserRouter } from 'react-router';
 import RootLayout from './Layout/RootLayout';
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import Home from './Pages/HomePage/Home';
 import Timeline from './Pages/TimelinePage/Timeline';
 import Stats from './Pages/StatsPage/Stats';
@@ -40,6 +42,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <TimeLineProvider>
+      <ToastContainer position="top-right"></ToastContainer>
       <RouterProvider router={router} />
     </TimeLineProvider>
       

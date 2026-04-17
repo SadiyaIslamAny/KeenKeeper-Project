@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import { Phone, MessageSquare, Video, Bell, Archive, Trash2 } from "lucide-react";
 import { SyncLoader } from 'react-spinners';
 import { TimeLineContext } from '../../Context/TimeLineContext';
+import { toast } from 'react-toastify';
 
 const FriendDetails = () => {
 
@@ -10,8 +11,6 @@ const FriendDetails = () => {
   const [friends, setFriends] = useState([]);
 
   const { ctvs, setCtvs } = useContext(TimeLineContext);
-
-  // Fetch Friends
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch('/friends.json');
@@ -21,12 +20,10 @@ const FriendDetails = () => {
     fetchData();
   }, []);
 
-  // Find Expected Friend
+
   const expectedFriend = friends.find(
     (friend) => friend.id == id
   );
-
-  // Loader
   if (!expectedFriend) {
     return (
       <div className="flex justify-center mt-30">
@@ -34,8 +31,6 @@ const FriendDetails = () => {
       </div>
     );
   }
-
-  // ✅ Fixed Timeline Function
   const handleCtvs = (type) => {
 
     const newActivity = {
@@ -46,6 +41,17 @@ const FriendDetails = () => {
     };
 
     setCtvs([...ctvs, newActivity]);
+
+    if (type === "call") {
+      toast.success(`Calling ${expectedFriend.name}`);
+    } 
+    else if (type === "text") {
+      toast.success(`Text With ${expectedFriend.name}`);
+    } 
+    else if (type === "video") {
+      toast.success(`Video call started with ${expectedFriend.name}`);
+    }
+
   };
 
   return (
@@ -53,8 +59,6 @@ const FriendDetails = () => {
     <div className="bg-gray-100 min-h-screen p-3 sm:p-4 md:p-6">
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-
-        {/* LEFT SIDE */}
 
         <div className="bg-white rounded-2xl shadow p-4 sm:p-6 text-center">
 
@@ -113,11 +117,7 @@ const FriendDetails = () => {
 
         </div>
 
-        {/* RIGHT SIDE */}
-
         <div className="md:col-span-2 space-y-4 md:space-y-6">
-
-          {/* Stats */}
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
 
@@ -168,8 +168,6 @@ const FriendDetails = () => {
             <button className="border px-3 py-1 rounded-lg text-sm hover:bg-gray-50">Edit</button> 
         </div>
 
-          {/* Quick Check-In */}
-
           <div className="bg-white rounded-xl shadow p-4 sm:p-5">
 
             <h3 className="font-medium text-base sm:text-lg text-[#244D3F] mb-3 sm:mb-4">
@@ -178,7 +176,7 @@ const FriendDetails = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
 
-              {/* Call */}
+  
 
               <button
                 onClick={() => handleCtvs("call")}
@@ -188,8 +186,6 @@ const FriendDetails = () => {
                 Call
               </button>
 
-              {/* Text */}
-
               <button
                 onClick={() => handleCtvs("text")}
                 className="bg-[#F8FAFC] border-2 border-[#E9E9E9] rounded-xl py-5 flex flex-col items-center gap-2"
@@ -197,8 +193,6 @@ const FriendDetails = () => {
                 <MessageSquare size={25} className="text-blue-600" />
                 Text
               </button>
-
-              {/* Video */}
 
               <button
                 onClick={() => handleCtvs("video")}
