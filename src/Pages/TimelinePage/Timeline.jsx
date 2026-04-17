@@ -56,7 +56,7 @@ const Timeline = () => {
               }
             >
 
-              <option value="all">(all)</option>
+              <option value="Filter">Filter</option>
               <option value="call">Call</option>
               <option value="text">Text</option>
               <option value="video">Video</option>
@@ -94,8 +94,6 @@ const Timeline = () => {
               ">
                 {getIcon(ctv.type)}
               </div>
-
-              {/* Text */}
               <div className="flex-1">
 
                 <h2 className="
