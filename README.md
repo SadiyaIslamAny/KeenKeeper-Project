@@ -1,16 +1,34 @@
-# React + Vite
+# KeenKeeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview:
+KeenKeeper is a friendship tracking web application that helps users monitor their communication history with friends. Users can view each friend’s interaction timeline and understand how often they connect through calls, messages, and video interactions. The app also provides visual analytics using charts to make communication patterns easy to understand.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used:
+- React.js
+- React Router
+- Tailwind CSS
+- DaisyUI
+- JavaScript (ES6+)
+- Recharts
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Features:
 
-## Expanding the ESLint configuration
+### 1️⃣ Friend Card Navigation
+Users can click on a friend card to open a detailed view showing that friend’s full interaction history.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2️⃣ Timeline with Filtering System
+All interactions (call, message, video, etc.) are displayed in a timeline with filtering options to view specific activity types.
+
+### 3️⃣ Analytics Stats with Recharts
+The app uses Recharts to visualize communication data, such as total calls, messages, and video interactions, helping users understand their activity patterns.
+
+---
+
+## Responsive Design:
+KeenKeeper is fully responsive and works smoothly on mobile, tablet, and desktop devices.
+
+---
